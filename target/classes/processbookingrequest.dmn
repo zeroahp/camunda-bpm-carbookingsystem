@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Definitions_1h6c6mp" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.0.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.17.0">
+  <decision id="processbookingandpaymentrequest" name="Xử lý yêu cầu đặt xe và thanh toán">
+    <decisionTable id="DecisionTable_0sm6der" hitPolicy="FIRST">
+      <input id="InputClause_0fvo7jd" label="Loại xe" biodi:width="162" camunda:inputVariable="bustype">
+        <inputExpression id="LiteralExpression_12ph0bl" typeRef="string" expressionLanguage="feel">
+          <text>bustype</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1cqoprv">
+          <text>"Seating Coach","Sleeper Coach","Limousine Coach","Luxury Coach","Double-Decker Coach"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0oq3olv" label="Tuyến xe" biodi:width="150" camunda:inputVariable="busroute">
+        <inputExpression id="LiteralExpression_01p5ap5" typeRef="string">
+          <text>busroute</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0cqg5ud">
+          <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_12ntak4" label="Thời gian đặt xe" biodi:width="150" camunda:inputVariable="schedule">
+        <inputExpression id="LiteralExpression_0nwfvs1" typeRef="string">
+          <text>schedule</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1hw2m5c">
+          <text>"0h-5h","6h-12h","13h-18h","19h-23h"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_1ysudsv" label="Số lượng" biodi:width="150" camunda:inputVariable="quantity">
+        <inputExpression id="LiteralExpression_1r2usrj" typeRef="integer">
+          <text>quantity</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1m34k43" label="Phương thức thanh toán" biodi:width="204" camunda:inputVariable="payment">
+        <inputExpression id="LiteralExpression_1iil9ex" typeRef="string">
+          <text>payment</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0ne2gm3">
+          <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
+        </inputValues>
+      </input>
+      <output id="OutputClause_1klhbjw" label="Tổng tiền" name="totalcost" typeRef="string" biodi:width="461">
+        <outputValues id="UnaryTests_0nm2lo7">
+          <text>"180"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_1edajhm">
+        <inputEntry id="UnaryTests_1fdhsjv">
+          <text>"Seating Coach"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1onikpj">
+          <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07pxjfe">
+          <text>"0h-5h"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00sk6st">
+          <text>0</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0v7rv9u">
+          <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0yf2lby">
+          <text>"180"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1cjiz94">
+        <inputEntry id="UnaryTests_1i590yx">
+          <text>"Seating Coach"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1aersqe">
+          <text>"Sóc Trăng - Cần Thơ"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1d0g47l">
+          <text>"6h-12h"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18jraci">
+          <text>[1..10]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18ice1b">
+          <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08vheql">
+          <text>"180"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="processbookingandpaymentrequest">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

@@ -1,0 +1,56 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "value": "0h-5h",
+          "label": "0h-5h"
+        },
+        {
+          "value": "6h-12h",
+          "label": "6h-12h"
+        },
+        {
+          "label": "13h-18h",
+          "value": "13h-18h"
+        },
+        {
+          "label": "19h-23h",
+          "value": "19h-23h"
+        },
+        {
+          "value": "Không chọn",
+          "label": "Không chọn"
+        }
+      ],
+      "label": "Khung giờ",
+      "type": "select",
+      "id": "Field_0u02onz",
+      "key": "schedule",
+      "validate": {
+        "required": false
+      },
+      "description": "Chọn khung giờ ",
+      "defaultValue": "Không chọn"
+    },
+    {
+      "action": "submit",
+      "label": "Đặt xe",
+      "type": "button",
+      "id": "Field_11k0o1i",
+      "key": "field_0tsuv3b",
+      "properties": {
+        "key1": "value"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "chonkhunggiokhacformId",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

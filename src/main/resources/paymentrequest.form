@@ -1,0 +1,48 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "value": "Tiền mặt",
+          "label": "Tiền mặt"
+        },
+        {
+          "label": "Chuyển khoản ngân hàng",
+          "value": "Chuyển khoản ngân hàng"
+        },
+        {
+          "label": "Không thanh toán",
+          "value": "Không thanh toán"
+        }
+      ],
+      "label": "Phương thức thanh toán",
+      "type": "radio",
+      "id": "Field_1afhqsj",
+      "key": "payment",
+      "defaultValue": "<none>",
+      "validate": {
+        "required": true
+      },
+      "disabled": false,
+      "properties": {
+        "key1": "value"
+      }
+    },
+    {
+      "action": "submit",
+      "label": "Xác nhận",
+      "type": "button",
+      "id": "Field_11k0o1i",
+      "key": "field_0tsuv3b"
+    }
+  ],
+  "type": "default",
+  "id": "yeucauthanhtoanformId",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

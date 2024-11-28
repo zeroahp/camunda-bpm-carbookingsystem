@@ -1,0 +1,161 @@
+{
+  "components": [
+    {
+      "label": "Tên khách hàng",
+      "type": "textfield",
+      "id": "Field_1grh8uc",
+      "key": "username",
+      "defaultValue": "Nhập tên",
+      "validate": {
+        "required": true,
+        "minLength": 8,
+        "maxLength": 35
+      },
+      "description": "Nhập tên khách hàng"
+    },
+    {
+      "label": "Số điện thoại",
+      "type": "textfield",
+      "id": "Field_0shnxgz",
+      "key": "phonenumber",
+      "validate": {
+        "required": true,
+        "regularExpressionPattern": "${/^0(3|5|7|8|9)\\d{8}$/}",
+        "minLength": 10,
+        "maxLength": 11
+      },
+      "description": "Nhập số điện thoại "
+    },
+    {
+      "values": [
+        {
+          "label": "Seating Coach",
+          "value": "Seating Coach"
+        },
+        {
+          "label": "Double-Decker Coach",
+          "value": "Double-Decker Coach"
+        },
+        {
+          "label": "Sleeper Coach",
+          "value": "Sleeper Coach"
+        },
+        {
+          "label": "Luxury Coach",
+          "value": "Luxury Coach"
+        },
+        {
+          "value": "Limousine Coach",
+          "label": "Limousine Coach"
+        }
+      ],
+      "label": "Loại xe",
+      "type": "select",
+      "id": "Field_0986p9s",
+      "key": "bustype",
+      "validate": {
+        "required": true
+      },
+      "description": "Chọn loại xe",
+      "defaultValue": "Seating Coach"
+    },
+    {
+      "values": [
+        {
+          "value": "Sóc Trăng - Cần Thơ",
+          "label": "Sóc Trăng - Cần Thơ"
+        },
+        {
+          "label": "Sóc Trăng - TP Hồ Chí Minh",
+          "value": "Sóc Trăng - TP Hồ Chí Minh"
+        },
+        {
+          "value": "Cần Thơ - TP Hồ Chí Minh",
+          "label": "Cần Thơ - TP Hồ Chí Minh"
+        },
+        {
+          "label": "Cần Thơ - Phan Thiết",
+          "value": "Cần Thơ - Phan Thiết"
+        },
+        {
+          "label": "Cần Thơ - Đà Lạt",
+          "value": "Cần Thơ - Đà Lạt"
+        },
+        {
+          "label": "TP Hồ Chí Minh - Đà Lạt",
+          "value": "TP Hồ Chí Minh - Đà Lạt"
+        },
+        {
+          "label": "TP Hồ Chí Minh - Phan Thiết",
+          "value": "TP Hồ Chí Minh - Phan Thiết"
+        }
+      ],
+      "label": "Tuyến xe",
+      "type": "select",
+      "id": "Field_1jqcvv4",
+      "key": "busroute",
+      "validate": {
+        "required": true
+      },
+      "defaultValue": "Sóc Trăng - Cần Thơ",
+      "description": "Chọn tuyến xe"
+    },
+    {
+      "values": [
+        {
+          "value": "0h-5h",
+          "label": "0h-5h"
+        },
+        {
+          "value": "6h-12h",
+          "label": "6h-12h"
+        },
+        {
+          "label": "13h-18h",
+          "value": "13h-18h"
+        },
+        {
+          "label": "19h-23h",
+          "value": "19h-23h"
+        }
+      ],
+      "label": "Khung giờ",
+      "type": "select",
+      "id": "Field_0u02onz",
+      "key": "schedule",
+      "validate": {
+        "required": true
+      },
+      "description": "Chọn khung giờ ",
+      "defaultValue": "0h-5h"
+    },
+    {
+      "label": "Số lượng ghế",
+      "type": "number",
+      "id": "Field_07fy295",
+      "key": "quantity",
+      "validate": {
+        "min": 1,
+        "required": true,
+        "max": 10
+      },
+      "description": "Chọn số ghế luốn đặt"
+    },
+    {
+      "action": "submit",
+      "label": "Đặt xe",
+      "type": "button",
+      "id": "Field_11k0o1i",
+      "key": "field_0tsuv3b"
+    }
+  ],
+  "type": "default",
+  "id": "yeucauthongtinkhachhangformId",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}
