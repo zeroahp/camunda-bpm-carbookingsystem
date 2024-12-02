@@ -102,7 +102,7 @@
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="QuanLyDatVeXe">
       <bpmndi:BPMNEdge id="Flow_0cc8lzg_di" bpmnElement="Flow_0cc8lzg">
         <di:waypoint x="930" y="130" />
-        <di:waypoint x="980" y="130" />
+        <di:waypoint x="1020" y="130" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0q4f2rk_di" bpmnElement="conghetrong">
         <di:waypoint x="780" y="265" />
@@ -193,7 +193,7 @@
         <di:waypoint x="270" y="290" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0nwgu33_di" bpmnElement="Flow_0nwgu33">
-        <di:waypoint x="1080" y="130" />
+        <di:waypoint x="1120" y="130" />
         <di:waypoint x="1215" y="130" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="BPMNShape_1ntqrkj" bpmnElement="Event_0quv0fk">
@@ -240,10 +240,6 @@
         <dc:Bounds x="830" y="90" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BPMNShape_1le2tc8" bpmnElement="Activity_1qnrb5v">
-        <dc:Bounds x="980" y="90" width="100" height="80" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0hfnb5c_di" bpmnElement="thongbaohuydatxe">
         <dc:Bounds x="1490" y="410" width="100" height="80" />
       </bpmndi:BPMNShape>
@@ -261,6 +257,10 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1204" y="75" width="72" height="27" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1le2tc8" bpmnElement="Activity_1qnrb5v">
+        <dc:Bounds x="1020" y="90" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

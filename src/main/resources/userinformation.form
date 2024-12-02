@@ -5,10 +5,9 @@
       "type": "textfield",
       "id": "Field_1grh8uc",
       "key": "username",
-      "defaultValue": "Nhập tên",
       "validate": {
         "required": true,
-        "minLength": 8,
+        "minLength": 3,
         "maxLength": 35
       },
       "description": "Nhập tên khách hàng"
@@ -56,7 +55,7 @@
       "validate": {
         "required": true
       },
-      "description": "Chọn loại xe",
+      "description": "*Lưu ý: Luxury Coach chỉ áp dụng cho tuyến xe xuất phát từ Cần Thơ và TP Hồ Chí Minh ",
       "defaultValue": "Seating Coach"
     },
     {
@@ -98,7 +97,10 @@
         "required": true
       },
       "defaultValue": "Sóc Trăng - Cần Thơ",
-      "description": "Chọn tuyến xe"
+      "description": "Chọn tuyến xe",
+      "properties": {
+        "key1": "value"
+      }
     },
     {
       "values": [
@@ -139,7 +141,7 @@
         "required": true,
         "max": 10
       },
-      "description": "Chọn số ghế luốn đặt"
+      "description": "Chọn số lượng ghế"
     },
     {
       "action": "submit",

@@ -39,14 +39,10 @@
           <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
         </inputValues>
       </input>
-      <output id="OutputClause_1klhbjw" label="Tổng tiền" name="totalcost" typeRef="string" biodi:width="461">
-        <outputValues id="UnaryTests_0nm2lo7">
-          <text>"180"</text>
-        </outputValues>
-      </output>
+      <output id="OutputClause_1klhbjw" label="Tổng tiền" name="totalcost" typeRef="double" biodi:width="461" />
       <rule id="DecisionRule_1edajhm">
         <inputEntry id="UnaryTests_1fdhsjv">
-          <text>"Seating Coach"</text>
+          <text>"Seating Coach","Luxury Coach","Double-Decker Coach"</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1onikpj">
           <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
@@ -61,7 +57,7 @@
           <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0yf2lby">
-          <text>"180"</text>
+          <text>180.000</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1cjiz94">
@@ -69,10 +65,10 @@
           <text>"Seating Coach"</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1aersqe">
-          <text>"Sóc Trăng - Cần Thơ"</text>
+          <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1d0g47l">
-          <text>"6h-12h"</text>
+          <text>"6h-12h","13h-18h","19h-23h"</text>
         </inputEntry>
         <inputEntry id="UnaryTests_18jraci">
           <text>[1..10]</text>
@@ -81,7 +77,87 @@
           <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_08vheql">
-          <text>"180"</text>
+          <text>180.000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hxtlje">
+        <inputEntry id="UnaryTests_13r59on">
+          <text>"Sleeper Coach"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16u61qt">
+          <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yypljb">
+          <text>"0h-5h","6h-12h","13h-18h","19h-23h"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_034y3wf">
+          <text>[1..10]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xydofr">
+          <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0itnciw">
+          <text>220.000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08d0oai">
+        <inputEntry id="UnaryTests_15w3r3a">
+          <text>"Limousine Coach"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ys4ogh">
+          <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_103hsau">
+          <text>"0h-5h","6h-12h","13h-18h","19h-23h"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0k1ufow">
+          <text>[1..10]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18le9gh">
+          <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1oz47r0">
+          <text>320.000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0s67uh5">
+        <inputEntry id="UnaryTests_1ybna1a">
+          <text>"Luxury Coach"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10sw2bz">
+          <text>"Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04wibmn">
+          <text>"6h-12h","13h-18h","19h-23h"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09vmb2d">
+          <text>[1..10]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vsoj6y">
+          <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_078y1aj">
+          <text>450.000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1uxa2kz">
+        <inputEntry id="UnaryTests_0puifbp">
+          <text>"Double-Decker Coach"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_122cdqx">
+          <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bi25ac">
+          <text>"6h-12h","13h-18h","19h-23h"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m8114o">
+          <text>[1..10]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cfkkly">
+          <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11kvh58">
+          <text>220.000</text>
         </outputEntry>
       </rule>
     </decisionTable>

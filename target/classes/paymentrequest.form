@@ -26,7 +26,8 @@
       "disabled": false,
       "properties": {
         "key1": "value"
-      }
+      },
+      "description": "*Lưu ý: Khi quý khách chọn \"Không thanh toán\"  quá trình đặt vé sẽ tự động bị hủy bỏ."
     },
     {
       "action": "submit",
