@@ -30,7 +30,7 @@
       "validate": {
         "required": false
       },
-      "description": "Chọn khung giờ ",
+      "description": "*Lưu ý: (1) Vui lòng không chọn lại khung giờ đã hết vé. (2) Nếu quý khách chọn \"Không chọn\" quá trình đặt vé sẽ kết thúc.",
       "defaultValue": "Không chọn"
     },
     {

@@ -18,7 +18,7 @@
           <text>"Sóc Trăng - Cần Thơ","Sóc Trăng - TP Hồ Chí Minh","Cần Thơ - TP Hồ Chí Minh","Cần Thơ - Phan Thiết","Cần Thơ - Đà Lạt","TP Hồ Chí Minh - Hải Phòng","Tp Hồ Chí Minh - Phan Thiết","TP Hồ Chí Minh - Đà Lạt"</text>
         </inputValues>
       </input>
-      <input id="InputClause_12ntak4" label="Thời gian đặt xe" biodi:width="150" camunda:inputVariable="schedule">
+      <input id="InputClause_12ntak4" label="Khung giờ" biodi:width="150" camunda:inputVariable="schedule">
         <inputExpression id="LiteralExpression_0nwfvs1" typeRef="string">
           <text>schedule</text>
         </inputExpression>
@@ -39,7 +39,7 @@
           <text>"Tiền mặt","Chuyển khoản ngân hàng"</text>
         </inputValues>
       </input>
-      <output id="OutputClause_1klhbjw" label="Tổng tiền" name="totalcost" typeRef="double" biodi:width="461" />
+      <output id="OutputClause_1klhbjw" label="Tổng tiền" name="totalcost" typeRef="double" biodi:width="150" />
       <rule id="DecisionRule_1edajhm">
         <inputEntry id="UnaryTests_1fdhsjv">
           <text>"Seating Coach","Luxury Coach","Double-Decker Coach"</text>

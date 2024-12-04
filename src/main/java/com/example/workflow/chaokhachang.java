@@ -7,7 +7,7 @@ public class chaokhachang implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
-        System.out.println("Chao mung da den he thong dat xe!");
+        System.out.println("Chào mừng quý khách đã đến với hệ thống đặt vé xe Assan!");
 
     }
 }
