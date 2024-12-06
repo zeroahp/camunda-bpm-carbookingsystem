@@ -38,9 +38,9 @@ public class thongbaodatvexethanhcong implements JavaDelegate {
         System.out.printf("| %-20s | %-40s |\n", "Phương thức thanh toán", payment);
         System.out.println("-------------------------------------------------------------------");
 
-        if ("Chuyển khoản ngân hàng".equals(payment)) {
-            System.out.println("Quý khách vui lòng thực hiện thanh toán trực tuyến.");
-        } else if ("Tiền mặt".equals(payment)) {
+        if (payment.equals("Chuyển khoản ngân hàng")) {
+            System.out.println("Quý khách vui lòng thực hiện thanh toán trực tuyến trong thời gian sớm nhất.");
+        } else if (payment.equals("Tiền mặt")) {
             System.out.println("Quý khách vui lòng đến quầy để thực hiện thanh toán.");
         }
 

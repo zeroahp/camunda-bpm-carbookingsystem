@@ -136,7 +136,7 @@
         <di:waypoint x="1010" y="450" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1g6wnr0_di" bpmnElement="Flow_1g6wnr0">
-        <di:waypoint x="1590" y="450" />
+        <di:waypoint x="1600" y="450" />
         <di:waypoint x="1712" y="450" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1606" y="432" width="90" height="20" />
@@ -148,9 +148,9 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1x7tum4_di" bpmnElement="khongchon">
         <di:waypoint x="1255" y="450" />
-        <di:waypoint x="1490" y="450" />
+        <di:waypoint x="1500" y="450" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1343" y="432" width="59" height="14" />
+          <dc:Bounds x="1348" y="432" width="59" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1ycwiwl_di" bpmnElement="Flow_1ycwiwl">
@@ -194,21 +194,18 @@
         <di:waypoint x="570" y="290" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0wo1j65_di" bpmnElement="Flow_0wo1j65">
-        <di:waypoint x="370" y="290" />
+        <di:waypoint x="380" y="290" />
         <di:waypoint x="420" y="290" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_19k49hc_di" bpmnElement="Flow_19k49hc">
         <di:waypoint x="208" y="290" />
-        <di:waypoint x="270" y="290" />
+        <di:waypoint x="280" y="290" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="BPMNShape_1ntqrkj" bpmnElement="Event_0quv0fk">
         <dc:Bounds x="172" y="272" width="36" height="36" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="154" y="316" width="72" height="27" />
         </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0c19qvg_di" bpmnElement="chaokhachhang">
-        <dc:Bounds x="270" y="250" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1ioz0ex_di" bpmnElement="yeucauthongtinkhachhang">
         <dc:Bounds x="420" y="250" width="100" height="80" />
@@ -233,7 +230,13 @@
       <bpmndi:BPMNShape id="Gateway_037qo7r_di" bpmnElement="Gateway_037qo7r" isMarkerVisible="true">
         <dc:Bounds x="1205" y="425" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1186" y="403" width="88" height="14" />
+          <dc:Bounds x="2036" y="453" width="88" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1ktktau_di" bpmnElement="Event_1ktktau">
+        <dc:Bounds x="1712" y="272" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1691" y="315" width="79" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_09920ef_di" bpmnElement="thongbaodatvexethanhcong">
@@ -242,10 +245,6 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0f7nyh7_di" bpmnElement="thongbaothanhtoanthatbaivahuydatvexe">
         <dc:Bounds x="1490" y="250" width="100" height="80" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0hfnb5c_di" bpmnElement="thongbaohuydatvexe">
-        <dc:Bounds x="1490" y="410" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1q4u6y3_di" bpmnElement="chonkhunggiokhac">
@@ -264,23 +263,24 @@
         <dc:Bounds x="1020" y="90" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0qbs8ha_di" bpmnElement="Event_0qbs8ha">
+        <dc:Bounds x="1712" y="112" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1687" y="155" width="87" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0a5tl9d_di" bpmnElement="Event_0a5tl9d">
         <dc:Bounds x="1712" y="432" width="36" height="36" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1704" y="475" width="53" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1ktktau_di" bpmnElement="Event_1ktktau">
-        <dc:Bounds x="1712" y="272" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1691" y="315" width="79" height="27" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="Activity_0c19qvg_di" bpmnElement="chaokhachhang">
+        <dc:Bounds x="280" y="250" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_0qbs8ha_di" bpmnElement="Event_0qbs8ha">
-        <dc:Bounds x="1712" y="112" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1687" y="155" width="87" height="27" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="Activity_0hfnb5c_di" bpmnElement="thongbaohuydatvexe">
+        <dc:Bounds x="1500" y="410" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
